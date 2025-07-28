@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@frontend/custom-schematics": [
+        "/tools/schematics/custom-library/index.ts"
+      ],
+      "@frontend/data-access": ["libs/habit-life/data-access/src/index.ts"],
+      "@frontend/layout": ["libs/habit-life/layout/src/index.ts"],
+      "@frontend/my-plugin": ["tools/my-plugin/src/index.ts"],
+      "@frontend/user": ["libs/habit-life/user/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

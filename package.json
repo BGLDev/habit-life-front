@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "dependencies": {
+    "@nx/devkit": "21.3.7",
     "@angular/common": "~20.1.0",
     "@angular/compiler": "~20.1.0",
     "@angular/core": "~20.1.0",
@@ -23,15 +24,20 @@
     "@angular/compiler-cli": "~20.1.0",
     "@angular/language-service": "~20.1.0",
     "@eslint/js": "^9.8.0",
-    "@nx/angular": "21.3.7",
+    "@nrwl/angular": "^19.8.4",
+    "@nrwl/workspace": "^19.8.4",
+    "@nx/angular": "^21.3.7",
+    "@nx/devkit": "^21.3.7",
     "@nx/eslint": "21.3.7",
     "@nx/eslint-plugin": "21.3.7",
     "@nx/jest": "21.3.7",
     "@nx/js": "21.3.7",
+    "@nx/plugin": "^21.3.7",
     "@nx/web": "21.3.7",
     "@nx/workspace": "21.3.7",
     "@schematics/angular": "~20.1.0",
     "@swc-node/register": "~1.9.1",
+    "@swc/cli": "~0.6.0",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@types/jest": "^30.0.0",
@@ -42,8 +48,10 @@
     "eslint-config-prettier": "^10.0.0",
     "jest": "^30.0.2",
     "jest-environment-jsdom": "^30.0.2",
+    "jest-environment-node": "^30.0.2",
     "jest-preset-angular": "~15.0.0",
     "jest-util": "^30.0.2",
+    "jsonc-eslint-parser": "^2.1.0",
     "nx": "21.3.7",
     "prettier": "^2.6.2",
     "ts-jest": "^29.4.0",
@@ -51,5 +59,11 @@
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0"
-  }
+  },
+  "nx": {
+    "plugins": [
+      "./tools/schematics/collection.json"
+    ]
+  },
+  "generators": "./generators.json"
 }
