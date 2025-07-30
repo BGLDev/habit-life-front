@@ -2,7 +2,9 @@
   "name": "@frontend/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve":"nvm use || nvm install;npx nx serve habitLife"
+  },
   "private": true,
   "dependencies": {
     "@nx/devkit": "21.3.7",
@@ -59,11 +61,5 @@
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0"
-  },
-  "nx": {
-    "plugins": [
-      "./tools/schematics/collection.json"
-    ]
-  },
-  "generators": "./generators.json"
+  }
 }
